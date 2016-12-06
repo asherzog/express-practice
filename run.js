@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 
-app.use(cors());  
+app.use(cors());
 app.use(bodyParser.json());
 app.listen(3000, function(){
   console.log("listening on port 3000");
@@ -11,22 +11,46 @@ app.listen(3000, function(){
 
 const drinks = [{
   name:"Kamikazie",
-  ingredients:["Vodka", "Triple-Sec", "Lime Juice"]
+  ingredients:["Vodka", "Triple-Sec", "Lime-Juice"]
 }, {
   name:"Washington-Apple",
-  ingredients:["Crown Royal", "Apple-pucker", "Cranberry Juice"]
+  ingredients:["Crown-Royal", "Apple-pucker", "Cranberry-Juice"]
 }, {
   name:"Oatmeal-Cookie",
-  ingredients:["Bailey's", "Butterscotch Schnapps", "Goldschlager"]
+  ingredients:["Bailey's", "Butterscotch-Schnapps", "Goldschlager"]
 }, {
-  name:"Pineapple-Upside-down",
-  ingredients:["Vanilla Vodka","Pineapple Juice", "Grenadine"]
+  name:"Pineapple-Upside-Down",
+  ingredients:["Vanilla-Vodka","Pineapple-Juice", "Grenadine"]
 }, {
   name:"Green-Tea",
-  ingredients:["Jameson", "Peach Schnapps", "Sours"]
+  ingredients:["Jameson", "Peach-Schnapps", "Sours"]
 }, {
   name:"Scooby-Snack",
-  ingredients:["Malibu", "Melon Schnapps", "Pineapple", "Cream"]
+  ingredients:["Malibu", "Melon-Liquor", "Pineapple", "Cream"]
+}, {
+  name:"Red-Headed-Slut",
+  ingredients: ["Jaeger","Peach-Schnapps", "Cranberry-Juice"]
+}, {
+  name: "B-52",
+  ingredients: ["Bailey's", "Kahlua", "Grand-Marnier"]
+}, {
+  name: "White-Gummy-Bear",
+  ingredients: ["Cherry-Vodka", "Peach-Schnapps", "Pineapple-Juice", "Sprite"]
+}, {
+  name: "Lemon-Drop",
+  ingredients: ["Citrus-Vodka", "Sugar", "Lemon"]
+}, {
+  name: "Butter-Ball",
+  ingredients: ["Butterscotch-Schnapps", "Amaretto"]
+}, {
+  name: "Vegas-Bomb",
+  ingredients: ["Crown-Royal", "Peach-Schnapps", "Red-Bull", "Cranberry-Juice"]
+}, {
+  name: "Melon-Ball",
+  ingredients: ["Vodka", "Melon-Liquor", "Pineapple-Juice"]
+}, {
+  name: "Girl-Scout-Cookie",
+  ingredients: ["Bailey's", "Kahlua", "Peppermint-Schnapps"]
 }];
 
 
